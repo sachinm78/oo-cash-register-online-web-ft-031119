@@ -7,6 +7,10 @@ class CashRegister
     @items = []
   end
   
+  def total 
+    @total
+  end 
+  
   def add_item(item_name, price, quantity = 1)
     if quantity > 1
       i = 0
